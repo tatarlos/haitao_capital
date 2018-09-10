@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   namespace :admin do
-    resources :article
+    resources :articles
     resources :article_categories
   end
   # mount Fae below your admin namespec
