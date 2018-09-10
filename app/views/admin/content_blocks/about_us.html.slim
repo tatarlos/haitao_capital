@@ -2,13 +2,8 @@
   == render 'fae/shared/form_header', header: @item
 
   main.content
-    = fae_input f, :title, input_class: 'slugger'
-    = fae_input f, :slug
-    = fae_input f, :introduction
-    = fae_input f, :body, markdown: true
-    = fae_datepicker f, :date
-
-    = fae_association f, :article_category
+    = fae_input f, :title
 
     = fae_image_form f, :hero_image
-    = fae_file_form f, :pdf
+    = fae_content_form f, :headline
+    = fae_content_form f, :body

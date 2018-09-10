@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
   root to: 'visitors#index'
   get "articles/:id", to: "articles#show"
+  get '/about-us', to: 'pages#about_us'
 
 end
